@@ -28,6 +28,9 @@ module.exports = {
 	eslint: {
 	  configFile: './.eslintrc'
 	},
+	resolve : {
+			extensions : ['','.js', '.jsx']
+	},
 	module : {
 		// config reloaders  add eslint
 		preLoaders : [
@@ -43,17 +46,17 @@ module.exports = {
 				test: /\.jsx?$/,
 				loaders: ['babel'],
 				include : APP_PATH
-			}
+			},
+			{
+		       test: /\.scss$/,
+		       loaders: ['style', 'css', 'sass']
+		    }
 		] 
 	},
 	plugins : [
 		new HtmlWebpackPlugin({
-			title: 'React Profile'
+			title: 'Deskmark app'
 		})
 		
-	],
-	resolve : {
-			extensions : ['','.js', '.jsx']
-	}
-
+	]
 }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GITPUB Test</title>
+</head>
+<body>
+	canvas<br/>
+    <canvas id="canvas"  width="910" height="400" style="border: 2px red solid"></canvas>
+</body>
+</html>
+<script src="a.js"></script>
+<script>
+	var canvas = document.getElementById('canvas'),
+    stage = new JTopo.Stage(canvas), // 创建一个舞台对象
+    scene = new JTopo.Scene(stage), // 创建一个场景对象
+    container = new JTopo.Container('边界自动变化');
+    node = new JTopo.Node("Hello");    // 创建一个节点
+    //scene.background = '1.jpg'; //背景图片不可以
+    stage.mode = 'select';
+    node.setLocation(0,0);    // 设置节点坐标  
+    // node.rotate = Math.random(); // 旋转角度
+    // node.scaleX = Math.random(); // 水平方向的缩放
+    // node.scaleY = Math.random(); // 垂直方向的缩放
+    // node.alpha = Math.random();  // 透明度
+    node.setImage('1.jpg'); // 设置图片
+    node.setSize(300,300); // 设置图片
+   // node.fontColor ="0,0,0"; // 设置文字颜色
+   	node.zIndex =  11;
+
+   	container.width = 110;
+   	container.height = 400;
+   	container.borderColor = '255,0,0';
+    container.borderRadius = 30; // 圆角
+    container.fillColor = '255,255,45';
+
+   	stage.add(scene);
+   	scene.add(container);
+   	container.add(node);
+    scene.add(node); // 放入到场景中
+    var nodeFrom = new JTopo.Node("from");
+    nodeFrom.zIndex =  12;
+    nodeFrom.setLocation(200,200);
+    scene.add(nodeFrom);
+    container.add(nodeFrom);     
+    var nodeTo = new JTopo.Node("To");
+    nodeTo.zIndex =  12;
+    nodeTo.setLocation(300,200);
+    scene.add(nodeTo);
+    container.add(nodeTo);         
+    var link = new JTopo.Link(nodeFrom, nodeTo); // 增加连线
+    link.zIndex =  12;
+    link.strokeStyle="#0000ff";
+    scene.add(link);
+	
+
+	/*node.click(function(event){
+		console.log(44444444);
+		stage.mode = 'drag';
+	});*/
+	// node.mouseover(function(event){
+	// 	console.log(2222222);
+	// 	stage.mode = 'drag';
+	// });
+	/*scene.mouse(function(event){
+		console.log(555555);
+		stage.mode = 'drag';
+	});*/
+
+	// scene.mouseup(function(event) {
+	// 	// body...
+	// 	console.log(333333333);
+	// 	stage.mode = 'select';
+	// });
+    //stage.zoomIn(0.5);
+</script>
