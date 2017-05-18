@@ -1,0 +1,176 @@
+<div class="icons">
+	<header class="content-header">
+		<h1>Icon 图标</h1>
+		<p>绿洲OASIS提供了一套常用的图标集合。集成Font Awesome提供可缩放的矢量图标，您可以使用CSS所提供的所有特性对它们进行更改，包括：大小、颜色、阴影或者其它任何支持的效果</p>
+	</header>
+	<oasis-row>
+		<oasis-col md=12>
+			<oasis-box>
+				<oasis-box-header>
+					<span class="title">图标字体使用教程</span>
+				</oasis-box-header>
+				<oasis-box-body height-auto>
+					<h3>基本用法</h3>
+					<oasis-box>
+					<oasis-col md=4>
+						<div style="margin-top: 21%; margin-left: 10%;">
+							<i class="fa fa-camera-retro"></i>
+							<i class="fa fa-camera-retro fa-lg"></i> 
+							<i class="fa fa-camera-retro fa-2x"></i> 
+							<i class="fa fa-camera-retro fa-3x"></i> 
+							<i class="fa fa-camera-retro fa-4x"></i> 
+							<i class="fa fa-camera-retro fa-5x"></i> 
+						</div>	
+					</oasis-col>
+					<oasis-col md=8>
+					 <p>
+					 	&nbsp;&nbsp;&nbsp;&nbsp;Font Awesome是为使用内联元素而设计的。我们通常更喜欢使用<mark>&lt;i&gt; </mark>，因为它更简洁。 但实际上使用<mark> &lt;span&gt;</mark> 才能更加语义化。使用 <mark>fa-lg (33%递增)、fa-2x、 fa-3x、fa-4x、fa-5x</mark> 类 来放大图标。
+					 </p>
+<pre>
+HTML:<br/>&lt;i class="fa fa-camera-retro"&gt;&lt;/i&gt;<br/>&lt;i class="fa fa-camera-retro fa-lg"&gt;&lt;/i&gt;<br/>&lt;i class="fa fa-camera-retro fa-2x"&gt;&lt;/i&gt;<br/>&lt;i class="fa fa-camera-retro fa-3x"&gt;&lt;/i&gt;<br/>&lt;i class="fa fa-camera-retro fa-4x"&gt;&lt;/i&gt;<br/>&lt;i class="fa fa-camera-retro fa-5x"&gt;&lt;/i&gt;
+</pre>
+					</oasis-col>
+					</oasis-box>
+					<h3>固定宽度</h3>
+					<oasis-box>
+					<oasis-col md=4 style="padding-top: 3%">
+						<div class="list-group">
+						  <a class="list-group-item" href="#"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a>
+						  <a class="list-group-item" href="#"><i class="fa fa-book fa-fw"></i>&nbsp; Library</a>
+						  <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw"></i>&nbsp; Applications</a>
+						  <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a>
+						</div>
+					</oasis-col>
+					<oasis-col md=8>
+					 <p>
+					 	&nbsp;&nbsp;&nbsp;&nbsp;使用 <mark>fa-fw </mark>可以将图标设置为一个固定宽度。主要用于不同宽度图标无法对齐的情况。 尤其在列表或导航时起到重要作用。
+					 </p>
+<pre>
+HTML:<br/>&lt;div class="list-group"&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="list-group-item" href="#"&gt;&lt;i class="fa fa-home fa-fw"&gt;&lt;/i&gt;&nbsp; Home&lt;/a&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="list-group-item" href="#"&gt;&lt;i class="fa fa-book fa-fw"&gt;&lt;/i&gt;&nbsp; Library&lt;/a&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="list-group-item" href="#"&gt;&lt;i class="fa fa-pencil fa-fw"&gt;&lt;/i&gt;&nbsp; Applications&lt;/a&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="list-group-item" href="#"&gt;&lt;i class="fa fa-cog  fa-fw"&gt;&lt;/i&gt;&nbsp; Settings&lt;/a&gt;<br/>&lt;/div&gt;
+</pre>
+					</oasis-col>
+					</oasis-box>
+					<h3>用于列表</h3>
+					<oasis-box>
+					<oasis-col md=4 style="padding-top: 3%">
+						<ul class="fa-ul">
+						  <li><i class="fa-li fa fa-check-square"></i>List icons</li>
+						  <li><i class="fa-li fa fa-check-square"></i>can be used</li>
+						  <li><i class="fa-li fa fa-spinner fa-spin"></i>as bullets</li>
+						  <li><i class="fa-li fa fa-square"></i>in lists</li>
+						</ul>
+					</oasis-col>
+					<oasis-col md=8>
+					 <p>
+					 	&nbsp;&nbsp;&nbsp;&nbsp;使用 <mark>fa-ul</mark> 和 <mark>fa-li</mark> 便可以简单的将无序列表的默认符号替换掉。
+					 </p>
+<pre>
+HTML:<br/>&lt;ul class="fa-ul"&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;i class="fa-li fa fa-check-square"&gt;&lt;/i&gt;List icons&lt;/li&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;i class="fa-li fa fa-check-square"&gt;&lt;/i&gt;can be used&lt;/li&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;i class="fa-li fa fa-spinner fa-spin"&gt;&lt;/i&gt;as bullets&lt;/li&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;i class="fa-li fa fa-square"&gt;&lt;/i&gt;in lists&lt;/li&gt;<br/>&lt;ul&gt;
+</pre>
+					</oasis-col>
+					</oasis-box>
+					<h3>动画</h3>
+					<oasis-box>
+					<oasis-col md=4 style="padding-top: 3%">
+						<div>
+						<i class="fa fa-spinner fa-spin"></i>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        <i class="fa fa-refresh fa-spin"></i>
+                        <i class="fa fa-cog fa-spin"></i>
+                        <i class="fa fa-spinner fa-pulse"></i>
+                        </div>
+					</oasis-col>
+					<oasis-col md=8>
+					 <p>
+					 	&nbsp;&nbsp;&nbsp;&nbsp;使用<mark> fa-spin </mark>类来使任意图标旋转，现在您还可以使用 <mark>fa-pulse </mark>来使其进行8方位旋转。尤其适合 <mark>fa-spinner、fa-refresh</mark> 和 <mark>fa-cog</mark> 。
+					 </p>
+<pre>
+HTML:<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-spinner fa-spin"&gt;&lt;/i&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-circle-o-notch fa-spin"&gt;&lt;/i&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-refresh fa-spin"&gt;&lt;/i&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-cog fa-spin"&gt;&lt;/i&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-spinner fa-pulse"&gt;&lt;/i&gt;
+</pre>
+					</oasis-col>
+					</oasis-box>
+					<h3>旋转与翻转</h3>
+					<oasis-box>
+					<oasis-col md=4 style="padding-top: 3%">
+						<div>
+							<i class="fa fa-shield"></i> normal<br>
+							<i class="fa fa-shield fa-rotate-90"></i> fa-rotate-90<br>
+							<i class="fa fa-shield fa-rotate-180"></i> fa-rotate-180<br>
+							<i class="fa fa-shield fa-rotate-270"></i> fa-rotate-270<br>
+							<i class="fa fa-shield fa-flip-horizontal"></i> fa-flip-horizontal<br>
+							<i class="fa fa-shield fa-flip-vertical"></i> icon-flip-vertical
+                        </div>
+					</oasis-col>
+					<oasis-col md=8>
+					 <p>
+					 	&nbsp;&nbsp;&nbsp;&nbsp;使用 <mark>fa-rotate-*</mark> 和<mark>fa-flip-* </mark>类可以对图标进行任意旋转和翻转。
+					 </p>
+<pre>
+HTML:<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-shield"&gt;&lt;/i&gt; normal<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-shield fa-rotate-90"&gt;&lt;/i&gt; fa-rotate-90<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-shield fa-rotate-180"&gt;&lt;/i&gt; fa-rotate-180<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-shield fa-rotate-270"&gt;&lt;/i&gt; fa-rotate-270<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-shield fa-flip-horizontal"&gt;&lt;/i&gt; fa-flip-horizontal<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-shield fa-flip-vertical"&gt;&lt;/i&gt; fa-flip-vertical<br/>
+</pre>
+					</oasis-col>
+					</oasis-box>
+					<h3>组合使用</h3>
+					<oasis-box>
+					<oasis-col md=4 style="padding-top: 3%">
+						<div>
+							<span class="fa-stack fa-lg">
+							  <i class="fa fa-square-o fa-stack-2x"></i>
+							  <i class="fa fa-twitter fa-stack-1x"></i>
+							</span>
+							fa-twitter on fa-square-o<br>
+							<span class="fa-stack fa-lg">
+							  <i class="fa fa-circle fa-stack-2x"></i>
+							  <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+							</span>
+							fa-flag on fa-circle<br>
+							<span class="fa-stack fa-lg">
+							  <i class="fa fa-square fa-stack-2x"></i>
+							  <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+							</span>
+							fa-terminal on fa-square<br>
+							<span class="fa-stack fa-lg">
+							  <i class="fa fa-camera fa-stack-1x"></i>
+							  <i class="fa fa-ban fa-stack-2x text-danger"></i>
+							</span>
+							fa-ban on fa-camera
+                        </div>
+					</oasis-col>
+					<oasis-col md=8>
+					 <p>
+					 	&nbsp;&nbsp;&nbsp;&nbsp;使用如果想要将多个图标组合起来，使用 <mark>fa-stack</mark> 类作为父容器，<mark>fa-stack-1x</mark>  作为正常比例的图标， <mark>fa-stack-2x </mark>作为大一些的图标。还可以使用 <mark>fa-inverse </mark>类来切换图标颜色。您可以在父容器中 通过添加 大图标 类来控制整体大小。
+					 </p>
+<pre>
+HTML:<br/>&lt;span class="fa-stack fa-lg"&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-square-o fa-stack-2x"&gt;&lt;/i&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-twitter fa-stack-1x"&gt;&lt;/i&gt;<br/>&lt;/span&gt;<br/>fa-twitter on fa-square-o<br>&lt;span class="fa-stack fa-lg"&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-square-o fa-stack-2x"&gt;&lt;/i&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-twitter fa-stack-1x"&gt;&lt;/i&gt;<br/>&lt;/span&gt;<br/>fa-twitter on fa-square-o<br>&lt;span class="fa-stack fa-lg"&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-square-o fa-stack-2x"&gt;&lt;/i&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-twitter fa-stack-1x"&gt;&lt;/i&gt;<br/>&lt;/span&gt;<br/>fa-twitter on fa-square-o<br>&lt;span class="fa-stack fa-lg"&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-square-o fa-stack-2x"&gt;&lt;/i&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-twitter fa-stack-1x"&gt;&lt;/i&gt;<br/>&lt;/span&gt;<br/>fa-twitter on fa-square-o<br>
+</pre>
+					</oasis-col>
+					</oasis-box>
+				</oasis-box-body>
+			</oasis-box>
+		</oasis-col>
+	</oasis-row>
+	<oasis-row>
+		<oasis-col md=12>
+			<oasis-box>
+				<oasis-box-header>
+					<span class="title">ICON图标集合</span>
+				</oasis-box-header>
+				<oasis-box-body height-auto>
+					<div ng-repeat="item in icons" class="clearfix">
+						<h3>{{item.identify}}</h3>
+						<oasis-col md =4 ng-repeat="icon in item.icons">
+							<div class="icon-block">
+								<input type="button" 
+								class="copy-btn" 
+								value="copy" 
+								onclick="if(copyToClipboard($(this).parent()[0])){alert('复制成功')}else{alert('复制失败')} " />
+								<i class="{{icon}}"></i><br/>
+								<span>{{icon}}</span>	
+							</div>
+						</oasis-col>
+					</div>
+				</oasis-box-body>
+			</oasis-box>
+		</oasis-col>
+	</oasis-row>
+</div>

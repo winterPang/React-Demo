@@ -1,0 +1,45 @@
+
+@path:"../../../";
+@import '@{path}less/$variable.less';
+
+.layout{}
+
+.oasis-box{
+	border: 1px solid @oasis-box-border-color;
+	margin-bottom: @oasis-box-bottom;
+	background: @oasis-box-bg;
+	overflow-y: hidden;
+	.box-header{
+		height:@box-header-height;
+    	line-height: @box-header-height;
+    	background: @box-header-bg;
+    	.title{
+    		color: @box-header-title-color;
+			font-size: @box-header-title-size;
+			padding-left: 25px;
+			//float: left;
+    	}
+    	.tips{
+    		margin-left: 2%;
+    		font-size: @box-header-tips-size;
+    	}
+    	&.no-background{
+			background: transparent;
+		}
+	}
+	.box-body{
+	   	overflow: hidden;
+		height: @box-body-height;
+		padding: 25px 30px;
+		&.no-height{
+		   	height:auto;
+		}
+	}
+	.box-bottom{
+		padding: 10px 15px;
+		background-color: @box-footer-bg;
+		border-top: 1px solid @box-footer-border-bg;
+		border-bottom-right-radius: 3px;
+		border-bottom-left-radius: 3px;
+	}
+}

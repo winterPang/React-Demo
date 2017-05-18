@@ -1,0 +1,125 @@
+@menuFontColor : #b8c7ce;
+@itemHeight : 30px;
+@firstFontSize : 18px;
+@secondFontSize : 15px;
+@thirdFontSize : 12px;
+
+.transform(@transValue){
+	-webkit-transform: @transValue;
+    -moz-transform: @transValue;
+    -ms-transform: @transValue;
+    -o-transform: @transValue;
+    transform: @transValue;
+}
+
+.oasis-menu{
+	margin-left: -10px;
+	ul {
+		list-style: none;
+		padding: 0;
+	    font-weight: bolder;
+		a {
+	    	display: inline-block;
+			width: 100%;
+	    	vertical-align: middle;
+	    	color:@menuFontColor;
+	    	line-height: @itemHeight;
+	    	cursor:pointer;
+	    	&:hover,&:focus {
+				text-decoration: none;
+				color:#fff;
+				background: #1e282c;
+				border-radius: 5px;
+			}
+	    }
+	    i {
+			color:#03a9f4;
+			margin-right: 5px;
+		}
+		.oasis-link{
+			display: block;
+		    position: absolute;
+		    background: rgba(4, 220, 40,.3);
+		    border-radius: 100%;
+		    .transform(scale(0));
+		}
+		.animate-ink{
+			animation: ripple .5s linear;
+		}
+		@-webkit-keyframes ripple {
+			100% {
+				opacity: 0;
+				-webkit-transform: scale(2.5)
+			}
+		}
+
+		@-moz-keyframes ripple {
+			100% {
+				opacity: 0;
+				-moz-transform: scale(2.5)
+			}
+		}
+
+		@-o-keyframes ripple {
+			100% {
+				opacity: 0;
+				-o-transform: scale(2.5)
+			}
+		}
+		@keyframes ripple {
+			100% {
+				opacity: 0;
+				transform: scale(2.5)
+			}
+		}
+		.menu-open {
+			display: block;
+		}
+		&.tree-first{
+			a{
+				font-size: @firstFontSize;
+	    		padding-left: 12px;
+			}
+		}
+		.tree-second{
+			a{
+				font-size: @secondFontSize;
+				padding-left: 22px;
+			}
+		}
+		.tree-three{
+			a {
+				font-size: @thirdFontSize;
+				padding-left: 32px;
+			}
+		}
+		&.horizontal{
+			li {
+				&.treeview{
+					display: inline-block;
+				}
+			}
+			.treeview{
+				ul {
+					position: absolute;
+					background-color: red;
+					display: none;
+				}				
+			}
+			.tree-second{
+				ul{
+					position: relative;
+				}
+			}
+
+		}
+		&.vertical{
+	  		.treeview{
+				ul{
+					display: none;
+				}
+				
+			}
+		}		
+	}
+}

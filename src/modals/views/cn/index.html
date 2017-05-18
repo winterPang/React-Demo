@@ -1,0 +1,41 @@
+<div class="modals">
+    <oasis-row>
+        <oasis-col md=12>
+            <oasis-box>
+                <oasis-box-header>
+                    <span class="title">基本实例</span>
+                </oasis-box-header>
+                <oasis-box-body height=100>
+                   <oasis-button type ="button" text="打开模态框" ng-click="show();"></oasis-button>
+                </oasis-box-body>
+                <oasis-box-footer>
+                    <div ng-show = "codeShow" class="code-content">
+                        <oasis-col md=8 >
+                            <button class="copy-btn" onclick="   if(copyToClipboard($(this).parent()[0])){alert('复制成功')}else{alert('复制失败')}">copy
+                            </button>
+                            <pre>html:<br/>&lt;oasis-button type ="button" text="默认按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="hover" text="默认按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="text" text="默认文本"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="link" text="默认链接"&gt;&lt;/oasis-button&gt;</pre>
+                        </oasis-col>
+                        <oasis-col md="4" >
+                            <p>
+                            <mark>type</mark>类型只用三个属性<mark>button、text、link</mark>表示按钮，文字按钮，链接按钮。<mark>text</mark>属性描述按钮内容  
+                            </p>
+                        </oasis-col>
+                    </div>
+                    <div class="code-change">
+                        <i ng-show = "!codeShow" 
+                        class="glyphicon glyphicon-chevron-down" 
+                        ng-click = "codeShow=!codeShow">
+                        <span class="code-font">显示代码</span></i>
+                        <i ng-show = "codeShow"
+                        class="glyphicon glyphicon-chevron-up" 
+                        ng-click = "codeShow=!codeShow">
+                        <span class="code-font">隐藏代码</span></i>
+                    </div>
+                </oasis-box-footer>
+            </oasis-box>
+        </oasis-col>
+    </oasis-row>
+    <div bs-modal="baseOption">
+        BODY区域
+    </div>
+</div>

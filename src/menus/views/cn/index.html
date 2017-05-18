@@ -1,0 +1,210 @@
+<div class="menus">
+	<header class="content-header">
+		<h1>菜单</h1>
+		<p>实现统一的菜单组件，保证风格统一</p>
+	</header>
+	<oasis-row>
+		<oasis-col md="6" class = "app-colum left-block">
+        	<oasis-box>
+        		<oasis-box-header>
+			        <span class="title">默认菜单</span>
+			    </oasis-box-header>
+        		<oasis-box-body height=100>
+					<oasis-menu opts="opts"></oasis-menu>
+        		</oasis-box-body>
+        		<oasis-box-footer>
+			   		<oasis-col md="12" ng-show = "codeShow">
+						<pre>html:<br/>&lt;oasis-menu  opts="opts" &gt;&lt;/oasis-menu&gt;</pre>
+						<pre>js:
+$scope.opts = {
+&nbsp;&nbsp;data:[
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"icon":"glyphicon glyphicon-education",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":"菜单一",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"sref":"a",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"child":[
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"icon" :"glyphicon glyphicon-education",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":"菜单二",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"sref":"b",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"child":[
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"icon": "glyphicon glyphicon-education",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"sref": "f",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":"菜单三" 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}] 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}]  
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;]
+};
+						</pre>	
+			   		</oasis-col>
+			   		<div class="code-change">
+			   			<i ng-show = "!codeShow" 
+					   	class="glyphicon glyphicon-chevron-down" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">显示代码</span></i>
+					   	<i ng-show = "codeShow"
+					   	class="glyphicon glyphicon-chevron-up" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">隐藏代码</span></i>
+			   		</div>	
+        		</oasis-box-footer>
+        	</oasis-box>
+		</oasis-col>
+		<oasis-col md="6" class = "app-colum left-block">
+        	<oasis-box>
+        		<oasis-box-header>
+			        <span class="title">水平菜单</span>
+			    </oasis-box-header>
+        		<oasis-box-body height=100>
+					<oasis-menu opts="horizontalOpt"></oasis-menu>
+        		</oasis-box-body>
+        		<oasis-box-footer>
+			   		<oasis-col md="12" ng-show = "codeHorizontalShow">
+						<pre>html:<br/>&lt;oasis-menu  opts="opts" &gt;&lt;/oasis-menu&gt;</pre>
+						<pre>js:
+$scope.opts = {
+&nbsp;&nbsp;data:[
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"icon":"glyphicon glyphicon-education",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":"菜单一",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"sref":"a",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"child":[
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"icon" :"glyphicon glyphicon-education",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":"菜单二",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"sref":"b",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"child":[
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"icon": "glyphicon glyphicon-education",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"sref": "f",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":"菜单三" 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}] 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}]  
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;]
+};
+						</pre>	
+			   		</oasis-col>
+			   		<div class="code-change">
+			   			<i ng-show = "!codeHorizontalShow" 
+					   	class="glyphicon glyphicon-chevron-down" 
+					   	ng-click = "codeHorizontalShow=!codeHorizontalShow">
+					   	<span class="code-font">显示代码</span></i>
+					   	<i ng-show = "codeHorizontalShow"
+					   	class="glyphicon glyphicon-chevron-up" 
+					   	ng-click = "codeHorizontalShow=!codeHorizontalShow">
+					   	<span class="code-font">隐藏代码</span></i>
+			   		</div>	
+        		</oasis-box-footer>
+        	</oasis-box>
+		</oasis-col>
+	</oasis-row>
+	<!-- <div class="row">
+	  	<div class="col-md-6">
+		  	<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">默认菜单</h3>
+			  </div>
+			  <div class="panel-body">
+			  	<oasis-menu opts="opts"></oasis-menu>
+			  </div>
+			   <div class="panel-footer"> 
+			   		<div class="row" ng-show = "codeShow">
+			   			<div class="col-md-12">
+			   				<pre>html:<br/>&lt;oasis-menu  opts="opts" &gt;&lt;/oasis-menu&gt;或&lt;div oasis-menu = ''&gt;&lt;/div&gt;</pre>
+	<pre>js:<br/>
+	$scope.opts = {
+	data:[
+	        {
+	            "icon"  : "glyphicon glyphicon-education",
+	            "name"  : "菜单一",
+	            "sref"  :  "a",
+	            "child" : [
+	                {
+	                  	"icon"  : "glyphicon glyphicon-education",
+	                    "name"  : "菜单二",
+	                    "sref"  :  "b",
+	                    "child" : [
+	                        {
+	                            "icon"  : "glyphicon glyphicon-education",
+	                            "sref"  :  "f",
+	                            "name"  : "菜单三" 
+	                        }
+	                    ] 
+	                }
+	            ]  
+	        }
+	    ]
+	};
+	</pre>	
+		</div>
+			   		</div>
+			   		<div class="codeChange">
+			   			<i ng-show = "!codeShow" 
+					   	class="glyphicon glyphicon-chevron-down" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="codeFont">显示代码</span></i>
+					   	<i ng-show = "codeShow"
+					   	class="glyphicon glyphicon-chevron-up" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="codeFont">隐藏代码</span></i>
+			   		</div>
+			  </div>
+			</div>
+		</div>
+	  <div class="col-md-6">
+	  		<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">水平菜单</h3>
+			  </div>
+			  <div class="panel-body">
+			  	<oasis-menu opts="horizontalOpt"></oasis-menu>
+			  </div>
+			   <div class="panel-footer">
+			   <div class="row" ng-show = "codeHorizontalShow">
+			   			<div class="col-md-12">
+			   				<pre>html:<br/>&lt;oasis-menu  opts="opts" &gt;&lt;/oasis-menu&gt;或&lt;div oasis-menu = ''&gt;&lt;/div&gt;</pre>
+	<pre>js:<br/>
+	$scope.opts = {
+	data:[
+	        {
+	            "icon"  : "glyphicon glyphicon-education",
+	            "name"  : "菜单一",
+	            "sref"  :  "a",
+	            "child" : [
+	                {
+	                  	"icon"  : "glyphicon glyphicon-education",
+	                    "name"  : "菜单二",
+	                    "sref"  :  "b",
+	                    "child" : [
+	                        {
+	                            "icon"  : "glyphicon glyphicon-education",
+	                            "sref"  :  "f",
+	                            "name"  : "菜单三" 
+	                        }
+	                    ] 
+	                }
+	            ]  
+	        }
+	    ]
+	};
+	</pre>	
+		</div>
+			   		</div>
+			   		<div class="codeChange">
+			   			<i ng-show = "!codeHorizontalShow" 
+					   	class="glyphicon glyphicon-chevron-down" 
+					   	ng-click = "codeHorizontalShow=!codeHorizontalShow">
+					   	<span class="codeFont">显示代码</span></i>
+					   	<i ng-show = "codeHorizontalShow"
+					   	class="glyphicon glyphicon-chevron-up" 
+					   	ng-click = "codeHorizontalShow=!codeHorizontalShow">
+					   	<span class="codeFont">隐藏代码</span></i>
+			   		</div></div>
+			</div>
+	  </div>
+	</div> -->
+	
+</div>

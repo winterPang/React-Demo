@@ -1,0 +1,42 @@
+﻿{
+  "data":[
+        {
+            "icon"  : "glyphicon glyphicon-education",
+            "name"  : "基本组件",
+            "sref"  : "",
+            "child" :[
+              {
+                "icon"  : "glyphicon glyphicon-education",
+                "name"  : "Layout布局",
+                "sref"  : "header.content.layout",
+                "child" : []  
+              },
+              {
+                "icon"  : "glyphicon glyphicon-education",
+                "name"  : "颜色",
+                "sref"  : "header.content.colors",
+                "child" : []  
+              },
+              {
+                "icon"  : "glyphicon glyphicon-education",
+                "name"  : "icon图标",
+                "sref"  : "header.content.icons",
+                "child" : []  
+              },
+              {
+                "icon"  : "glyphicon glyphicon-education",
+                "name"  : "按钮",
+                "sref"  : "header.content.buttons",
+                "child" : [] 
+              },
+              {
+                "icon"  : "glyphicon glyphicon-education",
+                "name"  : "菜单",
+                "sref"  : "header.content.menus",
+                "child" : []  
+              }
+              
+            ]  
+        }
+  ]
+}

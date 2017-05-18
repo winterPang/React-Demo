@@ -1,0 +1,34 @@
+@path:"../../";
+@import '@{path}frame/less/$variable.less';
+@import '@{path}frame/less/$mixin.less';
+
+//@headerBackColorEnd:#4ec1b2;
+.header{
+	.navbar {	
+		min-height: 80px;
+		.backgroundImage(@mian-color);
+		// background-image: -webkit-linear-gradient( @mian-color 20%, 
+		// 	@mian-color 60%, @mian-color);
+		// background-image: -o-linear-gradient( @mian-color 20%, 
+		// 	@mian-color  60%, @mian-color );
+		// background-image: linear-gradient( @mian-color  20%,
+		// 	@mian-color  60%, @mian-color );
+		.navbar-header{
+			text-align: center;
+		    padding-left: 8%;
+		    padding-top: 1%;
+		    .navbar-brand{
+		    	font-size: 30px
+		    }    
+		}
+		.navbar-nav{
+			margin-right: 5%;
+			&>li{
+				&>a{
+					font-size: 18px;
+					line-height: 49px;
+				}
+			}
+		}
+	}	
+}

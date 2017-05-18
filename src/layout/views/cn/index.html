@@ -1,0 +1,381 @@
+<div class="layouts">
+	<header class="content-header">
+		<h1>Layout布局</h1>
+		<p>基于bootstrap栅格布局，进行绿洲布局实现</p>
+	</header>
+	<oasis-row>
+		<oasis-col md="12">
+        	<oasis-box>
+        		<oasis-box-header>
+			        <span class="title">基本布局</span>
+			    </oasis-box-header>
+        		<oasis-box-body>
+        			<oasis-row>
+						<oasis-col md="12" class= "bg-purple-dark"></oasis-col>
+					</oasis-row>
+					<oasis-row>
+						<oasis-col md="6" class= "bg-purple-light"></oasis-col>
+						<oasis-col md="6" class= "bg-purple"></oasis-col>
+					</oasis-row>
+					<oasis-row>
+						<oasis-col md="4" class= "bg-purple-light "></oasis-col>
+						<oasis-col md="4" class= "bg-purple"></oasis-col>
+						<oasis-col md="4" class= "bg-purple-light"></oasis-col>
+					</oasis-row>
+					<oasis-row>
+						<oasis-col md="3" class= "bg-purple-light"></oasis-col>
+						<oasis-col md="3" class= "bg-purple"></oasis-col>
+						<oasis-col md="3" class= "bg-purple-light"></oasis-col>
+						<oasis-col md="3" class= "bg-purple "></oasis-col>
+					</oasis-row>
+					<oasis-row>
+						<oasis-col md="2" class= "bg-purple-light"></oasis-col>
+						<oasis-col md="2" class= "bg-purple"></oasis-col>
+						<oasis-col md="2" class= "bg-purple-light"></oasis-col>
+						<oasis-col md="2" class= "bg-purple"></oasis-col>
+						<oasis-col md="2" class= "bg-purple-light"></oasis-col>
+						<oasis-col md="2" class= "bg-purple"></oasis-col>
+					</oasis-row>
+        		</oasis-box-body>
+        		<oasis-box-footer>
+					<div ng-show = "codeShow" class="code-content">
+        				<oasis-col md=8 >
+	        				<button class="copy-btn" 
+									onclick="if(copyToClipboard($(this).parent()[0])){alert('复制成功')}else{alert('复制失败')}">copy
+							</button>	
+							<pre>html:<br/>&lt;oasis-row&gt;<br/>&nbsp;&nbsp;&lt;oasis-col md="12"&gt;&lt;/oasis-col&gt;<br/>&lt;/oasis-row&gt;<br/><br/>&lt;oasis-row&gt;<br/>&nbsp;&nbsp;&lt;oasis-col md="6"&gt;&lt;/oasis-col&gt;<br/>&nbsp;&nbsp;&lt;oasis-col md="6"&gt;&lt;/oasis-col&gt;<br/>&lt;/oasis-row&gt;<br/><br/>&lt;oasis-row&gt;<br/>&nbsp;&nbsp;&lt;oasis-col md="4"&gt;&lt;/oasis-col&gt;<br/>&nbsp;&nbsp;&lt;oasis-col md="4"&gt;&lt;/oasis-col&gt;<br/>&nbsp;&nbsp;&lt;oasis-col md="4"&gt;&lt;/oasis-col&gt;<br/>&lt;/oasis-row&gt;</pre>
+			   			</oasis-col>
+			   			<oasis-col md="4" >
+			   				<p>
+			   				布局组件使用oasis-row 和 oasis-col配合使用。
+			   				其中使用oasis-col元素md属性表示单元格所占比例,值只能是数字number类型。
+			   				还可以直接使用class="col-md-4",实现栅格布局。	
+			   				</p>
+			   			</oasis-col>
+        			</div>
+			   		<div class="code-change">
+			   			<i ng-show = "!codeShow" 
+					   	class="glyphicon glyphicon-chevron-down" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">显示代码</span></i>
+					   	<i ng-show = "codeShow"
+					   	class="glyphicon glyphicon-chevron-up" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">隐藏代码</span></i>
+			   		</div>
+        		</oasis-box-footer>
+        	</oasis-box>
+		</oasis-col>		
+	</oasis-row>
+	<oasis-row>
+		<oasis-col md="12">
+        	<oasis-box>
+        		<oasis-box-header>
+			        <span class="title">响应式布局</span>
+			    </oasis-box-header>
+        		<oasis-box-body>
+        			<oasis-row class="oasis-row">
+						<oasis-col md="12" sm='12' lg="12" xs="12" class= "bg-purple-dark oasis-col"></oasis-col>
+					</oasis-row>
+					<oasis-row  class="oasis-row">
+						<oasis-col md="6" sm='6' lg="6" xs="6" class= "bg-purple-light oasis-col"></oasis-col>
+						<oasis-col md="6" sm='6' lg="6" xs="6" class= "bg-purple oasis-col"></oasis-col>
+					</oasis-row>
+					<oasis-row  class="oasis-row">
+						<oasis-col md="4"  sm='4' lg="4" xs="4" class= "bg-purple-light oasis-col"></oasis-col>
+						<oasis-col md="4" sm='4' lg="4" xs="4" class= "bg-purple oasis-col"></oasis-col>
+						<oasis-col md="4" sm='4' lg="4" xs="4" class= "bg-purple-light oasis-col"></oasis-col>
+					</oasis-row>
+					<oasis-row  class="oasis-row">
+						<oasis-col md="3" sm='3' lg="3" xs="3" class= "bg-purple-light oasis-col"></oasis-col>
+						<oasis-col md="3" sm='3' lg="3" xs="3" class= "bg-purple oasis-col"></oasis-col>
+						<oasis-col md="3" sm='3' lg="3" xs="3" class= "bg-purple-light oasis-col"></oasis-col>
+						<oasis-col md="3" sm='3' lg="3" xs="3" class= "bg-purple oasis-col"></oasis-col>
+					</oasis-row>
+					<oasis-row  class="oasis-row">
+						<oasis-col md="2" sm='2' lg="2" xs="2" class= "bg-purple-light oasis-col"></oasis-col>
+						<oasis-col md="2" sm='2' lg="2" xs="2" class= "bg-purple oasis-col"></oasis-col>
+						<oasis-col md="2" sm='2' lg="2" xs="2" class= "bg-purple-light oasis-col"></oasis-col>
+						<oasis-col md="2" sm='2' lg="2" xs="2" class= "bg-purple oasis-col"></oasis-col>
+						<oasis-col md="2" sm='2' lg="2" xs="2" class= "bg-purple-light oasis-col"></oasis-col>
+						<oasis-col md="2" sm='2' lg="2" xs="2" class= "bg-purple oasis-col"></oasis-col>
+					</oasis-row>
+        		</oasis-box-body>
+        		<oasis-box-footer>
+        			<div ng-show = "codeShow" class="code-content">
+        				<oasis-col md=8 >
+        					<button class="copy-btn" 
+									onclick="if(copyToClipboard($(this).parent()[0])){alert('复制成功')}else{alert('复制失败')}">copy
+							</button>
+							<pre>html:<br/>&lt;oasis-row&gt;<br/>&nbsp;&nbsp;&lt;oasis-col md="12" sm='12' lg="12" xs="12" &gt;&lt;/oasis-col&gt;<br/>&lt;/oasis-row&gt;<br/><br/>&lt;oasis-row&gt;<br/>&nbsp;&nbsp;&lt;oasis-col md="6" sm='6' lg="6" xs="6" &gt;&lt;/oasis-col&gt;<br/>&nbsp;&nbsp;&lt;oasis-col md="6" sm='6' lg="6" xs="6" &gt;&lt;/oasis-col&gt;<br/>&lt;/oasis-row&gt;<br/><br/>&lt;oasis-row&gt;<br/>&nbsp;&nbsp;&lt;oasis-col md="4" sm='4' lg="4" xs="4" &gt;&lt;/oasis-col&gt;<br/>&nbsp;&nbsp;&lt;oasis-col md="4" sm='4' lg="4" xs="4" &gt;&lt;/oasis-col&gt;<br/>&nbsp;&nbsp;&lt;oasis-col md="4" sm='4' lg="4" xs="4" &gt;&lt;/oasis-col&gt;<br/>&lt;/oasis-row&gt;</pre>
+			   			</oasis-col>
+			   			<oasis-col md="4" >
+			   				<p>
+			   				使用了 Bootstrap 的 响应式设计，预设了四个响应尺寸：xs、sm、md和lg。
+			   				还可以直接使用class="col-md-4",实现栅格布局。	
+			   				</p>
+			   			</oasis-col>
+        			</div>
+			   		<div class="code-change">
+			   			<i ng-show = "!codeShow" 
+					   	class="glyphicon glyphicon-chevron-down" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">显示代码</span></i>
+					   	<i ng-show = "codeShow"
+					   	class="glyphicon glyphicon-chevron-up" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">隐藏代码</span></i>
+			   		</div>
+        		</oasis-box-footer>
+        	</oasis-box>
+		</oasis-col>
+	</oasis-row>
+	<oasis-row>
+		<oasis-col md="12">
+        	<oasis-box>
+        		<oasis-box-header>
+			        <span class="title">盒子布局</span>
+			    </oasis-box-header>
+        		<oasis-box-body height=100>
+       				body
+        		</oasis-box-body>
+        		<oasis-box-footer>
+					<div ng-show = "codeShow" class="code-content">
+        				<oasis-col md=8 >
+        					<button class="copy-btn" 
+									onclick="if(copyToClipboard($(this).parent()[0])){alert('复制成功')}else{alert('复制失败')}">copy
+							</button>
+							<pre>html:<br/>&lt;oasis-box&gt;<br/>&nbsp;&nbsp;&lt;oasis-box-header&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="title"&gt;盒子布局&lt;/span&gt;<br/>&nbsp;&nbsp;&lt;/oasis-box-header&gt;<br/>&nbsp;&nbsp;&lt;oasis-box-body&gt;&lt;/oasis-box-body&gt;<br/>&nbsp;&nbsp;&lt;oasis-box-footer&gt;&lt;/oasis-box-footer&gt;<br/>&lt;/oasis-box&gt;</pre>
+			   			</oasis-col>
+			   			<oasis-col md="4" >
+			   				<p>
+			   				盒子布局，通过新的元素box box-header box-body box-footer元素组合实现共性的盒子模型布局。
+			   				box-body 设置显示内容区域高度
+			   				<mark>height = 100</mark>  height数值number类型，也可以通过style="height:100px"实现设置。
+			   				</p>
+			   			</oasis-col>
+        			</div>
+			   		<div class="code-change">
+			   			<i ng-show = "!codeShow" 
+					   	class="glyphicon glyphicon-chevron-down" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">显示代码</span></i>
+					   	<i ng-show = "codeShow"
+					   	class="glyphicon glyphicon-chevron-up" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">隐藏代码</span></i>
+			   		</div>
+        		</oasis-box-footer>
+        	</oasis-box>
+		</oasis-col>		
+	</oasis-row>
+	<oasis-row>
+		<oasis-col md="12">
+        	<oasis-box>
+        		<oasis-box-header bgnone>
+			        <span class="title">无背景色盒子</span>
+			    </oasis-box-header>
+        		<oasis-box-body height=100>
+       				body
+        		</oasis-box-body>
+        		<oasis-box-footer>
+					<div ng-show = "codeShow" class="code-content">
+        				<oasis-col md=8 >
+        					<button class="copy-btn" 
+									onclick="if(copyToClipboard($(this).parent()[0])){alert('复制成功')}else{alert('复制失败')}">copy
+							</button>
+							<pre>html:<br/>&lt;oasis-box&gt;<br/>&nbsp;&nbsp;&lt;oasis-box-header  bgnone&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="title"&gt;盒子布局&lt;/span&gt;<br/>&nbsp;&nbsp;&lt;/oasis-box-header&gt;<br/>&nbsp;&nbsp;&lt;oasis-box-body&gt;&lt;/oasis-box-body&gt;<br/>&nbsp;&nbsp;&lt;oasis-box-footer&gt;&lt;/oasis-box-footer&gt;<br/>&lt;/oasis-box&gt;</pre>
+			   			</oasis-col>
+			   			<oasis-col md="4" >
+			   				<p>
+			   				 box-header <mark>bgnone</mark>属性去掉header背景色。
+			   				 或者通过style="background:transparent;"，同时支持class 属性自定义样式
+			   				</p>
+			   			</oasis-col>
+        			</div>
+			   		<div class="code-change">
+			   			<i ng-show = "!codeShow" 
+					   	class="glyphicon glyphicon-chevron-down" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">显示代码</span></i>
+					   	<i ng-show = "codeShow"
+					   	class="glyphicon glyphicon-chevron-up" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">隐藏代码</span></i>
+			   		</div>
+        		</oasis-box-footer>
+        	</oasis-box>
+		</oasis-col>
+	</oasis-row>
+	<oasis-row>
+		<oasis-col md="12">
+        	<oasis-box>
+        		<oasis-box-header>
+			        <span class="title">综合实例</span>
+			    </oasis-box-header>
+        		<oasis-box-body height=200>
+       				<oasis-row>
+						<oasis-col md=6>
+						    <oasis-box>
+						        <oasis-box-header>
+									<span class="title">标题1</span>
+								</oasis-box-header>
+						        <oasis-box-body height=100>
+						        Demo1
+						        </oasis-box-body>
+						    </oasis-box>
+						</oasis-col>
+						<oasis-col md=6>
+						    <oasis-box>
+						        <oasis-box-header >
+									<span class="title">标题2</span>
+								</oasis-box-header>
+						        <oasis-box-body height=100>
+						        Demo2
+						        </oasis-box-body>
+						    </oasis-box>
+						</oasis-col>
+       				</oasis-row>
+        		</oasis-box-body>
+        		<oasis-box-footer>
+					<div ng-show = "codeShow" class="code-content">
+        				<oasis-col md=12 >
+        					<button class="copy-btn" 
+									onclick="if(copyToClipboard($(this).parent()[0])){alert('复制成功')}else{alert('复制失败')}">copy
+							</button>
+							<pre>html:<br/>&lt;oasis-row&gt;<br/>&nbsp;&nbsp;&lt;oasis-col md=6&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;oasis-box&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;oasis-box-header&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="title"&gt;标题1&lt;/span&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/oasis-box-header&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;oasis-box-body&gt;Demo1&lt;/oasis-box-body&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/oasis-box&gt;<br/>&nbsp;&nbsp;&lt;/oasis-col&gt;<br/>&nbsp;&nbsp;&lt;oasis-col md=6&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;oasis-box&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;oasis-box-header&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="title"&gt;标题2&lt;/span&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/oasis-box-header&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;oasis-box-body&gt;Demo2&lt;/oasis-box-body&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/oasis-box&gt;<br/>&nbsp;&nbsp;&lt;/oasis-col&gt;<br/>&lt;/oasis-row&gt;
+						</oasis-col></pre>
+			   			</oasis-col>
+        			</div>
+			   		<div class="code-change">
+			   			<i ng-show = "!codeShow" 
+					   	class="glyphicon glyphicon-chevron-down" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">显示代码</span></i>
+					   	<i ng-show = "codeShow"
+					   	class="glyphicon glyphicon-chevron-up" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">隐藏代码</span></i>
+			   		</div>
+        		</oasis-box-footer>
+        	</oasis-box>
+		</oasis-col>
+	</oasis-row>
+	<oasis-row>
+		<oasis-col md="12">
+        	<oasis-box>
+        		<oasis-box-header>
+			        <span class="title">盒子布局</span>
+			    </oasis-box-header>
+        		<oasis-box-body height-auto>
+       				<table class="table table-bordered">
+  						<thead>
+  							<tr>
+  								<th>元素</th>
+  								<th>属性</th>
+  								<th>类型</th>
+  								<th>可选值</th>
+  								<th>默认值</th>
+  								<th>说明</th>
+  							</tr>
+  						</thead>
+  						<tbody>
+  							<tr class="success">
+  								<td>oasis-row</td>
+  								<td>----</td>
+  								<td>----</td>
+  								<td>----</td>
+  								<td>----</td>
+  								<td>类似Bootstrap .row 表示一行配合oasis-col一起使用</td>
+  							</tr>
+  							<tr class="info">
+  								<td  rowspan="4" 
+  								style="vertical-align: middle;">
+  								oasis-col
+  								</td>
+  								<td>md</td>
+  								<td>number</td>
+  								<td>----</td>
+  								<td>----</td>
+  								<td> (≥992px) 类似Bootstrap .col-md-4 中等屏幕 桌面显示器实行12格栅格布局。<br/>
+  								例如：md=4<br/>
+  								PS：配合oasis-box使用时，一定要添加class="app-colum left-block"。
+  								</td>
+  							</tr>
+  							<tr class="info">
+  								<!-- <td>oasis-col</td> -->
+  								<td>sm</td>
+  								<td>number</td>
+  								<td>----</td>
+  								<td>----</td>
+  								<td>(≥768px)类似Bootstrap .col-sm-4 小屏幕 平板 实行12格栅格布局。<br/>
+  								例如：sm=4<br/>
+  								PS：配合oasis-box使用时，一定要添加class="app-colum left-block"。
+  								</td>
+  							</tr>
+  							<tr class="info">
+  								<!-- <td>oasis-col</td> -->
+  								<td>lg</td>
+  								<td>number</td>
+  								<td>----</td>
+  								<td>----</td>
+  								<td>(≥1200px) 类似Bootstrap .col-lg-4 大屏幕大桌面显示器  实行12格 栅格布局。<br/>
+  								例如：lg=4<br/>
+  								PS：配合oasis-box使用时，一定要添加class="app-colum left-block"。
+  								</td>
+  							</tr>
+  							<tr class="info">
+  								<!-- <td>oasis-col</td> -->
+  								<td>xs</td>
+  								<td>number</td>
+  								<td>----</td>
+  								<td>----</td>
+  								<td>(&lt;768px)类似Bootstrap .col-xs-4 
+  								超小屏幕 手机实行12格栅格布局。<br/>
+  								例如：md=4<br/>
+  								PS：配合oasis-box使用时，一定要添加class="app-colum left-block"。
+  								</td>
+  							</tr>
+  							<tr class="warning">
+  								<td>oasis-box</td>
+  								<td>----</td>
+  								<td>----</td>
+  								<td>----</td>
+  								<td>----</td>
+  								<td> 带边框border的盒子<br/>
+  								PS：配合oasis-box-header oasis-box-body oasis-box-footer使用</td>
+  							</tr>
+  							<tr class="success">
+  								<td>oasis-box-header</td>
+  								<td>bgnone</td>
+  								<td>Boolean或不赋值</td>
+  								<td>----</td>
+  								<td>----</td>
+  								<td>盒子标题区域,通过<mark>bgnone</mark>设置标题区域是否需要背景色<br/>&lt;sapn class="title &gt;Title&lt;span&gt;<br/>
+  								PS：配合oasis-box-header oasis-box-body oasis-box-footer使用</td>
+  							</tr>
+  							<tr class="info">
+  								<td>oasis-box-body</td>
+  								<td>height</td>
+  								<td>number</td>
+  								<td>----</td>
+  								<td>300</td>
+  								<td>表示盒子展示内容，通过<mark>height</mark>设置盒子区域大小<br/>
+  								PS：配合oasis-box-header oasis-box-body oasis-box-footer使用</td>
+  							</tr>
+  							<tr class="warning">
+  								<td>oasis-box-footer</td>
+  								<td>----</td>
+  								<td>----</td>
+  								<td>----</td>
+  								<td>----</td>
+  								<td> 带边框border的盒子<br/>
+  								PS：配合oasis-box-header oasis-box-body oasis-box-footer使用</td>
+  							</tr>
+  						</tbody>
+					</table>
+        		</oasis-box-body>
+        	</oasis-box>
+		</oasis-col>
+	</oasis-row>
+</div>

@@ -1,0 +1,76 @@
+<!--
+1、form排版太灵活，只通过配置项来达到生成表单不一定能达到需求
+2、单个元素很简单，封装太复杂不合适
+3、表单验证，angular自带验证，还是自己封装？
+-->
+<div class="button">
+    <header class="content-header">
+        <h1>Form表单</h1>
+        <p>绿洲OASIS提供一套基于绿洲的表单组件</p>
+    </header>
+    <oasis-row>
+        <oasis-col md=6>
+            <oasis-box>
+                <oasis-box-header>
+                    <span class="title">radio</span>
+                </oasis-box-header>
+                <oasis-box-body>
+                    <oasis-row>
+                        <oasis-col md="4">
+                            <oasis-radio ng-model="radio.checked" value="checked">选中状态</oasis-radio>
+                        </oasis-col>
+                        <oasis-col md="4">
+                            <oasis-radio ng-model="radio.checked" value="unchecked">未选中状态</oasis-radio>
+                        </oasis-col>
+                        <oasis-col md="4">
+                            <oasis-radio ng-model="radio.checked" value="disabled" ng-disabled="radio.disabled">禁用状态</oasis-radio>
+                        </oasis-col>
+                    </oasis-row>
+                    <oasis-row>
+                        <oasis-col md="12">
+                            <br/>
+                            <h3>使用说明：</h3>
+                            <br/>
+                            <pre>1、选中状态：标签中的ng-model值与value值相同时，会呈现选中状态<br/>2、未选中状态：标签中的ng-model值与value值不相同时，会呈现未选中状态<br/>3、禁用状态：ng-disabled传值为true时，会呈现禁用状态<br/>4、分组：ng-model绑定为同一值的radio为同一组<br/>5、value值：通过angular传值时，需要使用双大括号</pre>
+                        </oasis-col>
+                    </oasis-row>
+                </oasis-box-body>
+                <oasis-box-footer>
+                    <div ng-show = "codeShow" class="code-content">
+                        <pre><button class="copy-btn" ng-click="codeCopy($event)">copy</button>html:<br/>&lt;oasis-radio ng-model="" value=""&gt;radio右侧文本&lt;/oasis-radio&gt;</pre>
+                    </div>
+                    <div class="code-change">
+                        <i ng-show = "!codeShow"
+                           class="glyphicon glyphicon-chevron-down"
+                           ng-click = "codeShow=!codeShow">
+                            <span class="code-font">显示代码</span></i>
+                        <i ng-show = "codeShow"
+                           class="glyphicon glyphicon-chevron-up"
+                           ng-click = "codeShow=!codeShow">
+                            <span class="code-font">隐藏代码</span></i>
+                    </div>
+                </oasis-box-footer>
+            </oasis-box>
+        </oasis-col>
+        <!--<oasis-col md=6>
+            <oasis-box>
+                <oasis-box-header>
+                    <span class="title">checkbox</span>
+                </oasis-box-header>
+                <oasis-box-body>
+                    <oasis-row>
+                        <oasis-col md="4">
+                            <oasis-checkbox ng-model="checkbox.checked" value="checked">选中状态</oasis-checkbox>
+                        </oasis-col>
+                        <oasis-col md="4">
+                            <oasis-checkbox ng-model="checkbox.checked" value="unchecked">未选中状态</oasis-checkbox>
+                        </oasis-col>
+                        <oasis-col md="4">
+                            <oasis-checkbox ng-model="checkbox.checked" value="disabled" ng-disabled="checkbox.disabled">禁用状态</oasis-checkbox>
+                        </oasis-col>
+                    </oasis-row>
+                </oasis-box-body>
+            </oasis-box>
+        </oasis-col>-->
+    </oasis-row>
+</div>

@@ -1,0 +1,93 @@
+{
+  "routes":[
+    {
+      "appId":"header",
+      "state": "header",
+      "url": "/header",
+      "templateUrl": "header/views/index.html",
+      "controller": "header/controller/index",
+      "dependencies": []
+    },
+    {
+      "appId":"content",
+      "state": "header.content",
+      "url": "/content",
+      "templateUrl": "content/views/index.html",
+      "controller": "content/controller/index",
+      "dependencies": []
+    },
+    {
+      "appId":"layout",
+      "state": "header.content.layout",
+      "url": "/layout",
+      "templateUrl": "layout/views/index.html",
+      "controller": "layout/controller/index",
+      "dependencies": []
+    },
+    {
+      "appId":"colors",
+      "state": "header.content.colors",
+      "url": "/colors",
+      "templateUrl": "colors/views/index.html",
+      "controller": "colors/controller/index",
+      "dependencies": []
+    },
+    {
+      "appId":"icons",
+      "state": "header.content.icons",
+      "url": "/icons",
+      "templateUrl": "icons/views/index.html",
+      "controller": "icons/controller/index",
+      "dependencies": []
+    },
+    {
+      "appId":"buttons",
+      "state": "header.content.buttons",
+      "url": "/buttons",
+      "templateUrl": "buttons/views/index.html",
+      "controller": "buttons/controller/index",
+      "dependencies": []
+    },
+    {
+      "appId":"tables",
+      "state": "header.content.tables",
+      "url": "/tables",
+      "templateUrl": "tables/views/index.html",
+      "controller": "tables/controller/index",
+      "dependencies": []
+    },
+    {
+      "appId":"modals",
+      "state": "header.content.modals",
+      "url": "/modals",
+      "templateUrl": "modals/views/index.html",
+      "controller": "modals/controller/index",
+      "dependencies": []
+    },
+    {
+      "appId":"menus",
+      "state": "header.content.menus",
+      "url": "/menus",
+      "templateUrl": "menus/views/index.html",
+      "controller": "menus/controller/index",
+      "dependencies": []
+    },
+    {
+      "appId":"es6",
+      "state": "header.content.es6",
+      "url": "/es6",
+      "templateUrl": "es6/views/index.html",
+      "controller": "es6/controller/index",
+      "dependencies": []
+    },
+    {
+      "appId":"es6",
+      "state": "header.content.directives",
+      "url": "/directives",
+      "templateUrl": "directives/views/index.html",
+      "controller": "directives/controller/index",
+      "dependencies": []
+    }
+  ]
+}
+

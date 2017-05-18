@@ -1,0 +1,126 @@
+@import "$variable";
+@import "$mixin";
+
+html,body {
+    direction: ltr;
+    font-family: @font-normal !important;
+    font-size: 14px !important; 
+    line-height: 1.42857143;
+    color: @global-font-color !important;
+    min-width: 320px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    h1, h2,h3, h4,h5,h6,
+    .h1,.h2,.h3,.h4,.h5,.h6 {
+        font-family: @font-normal-h;
+    }
+    
+    input[type=text], 
+    input[type=email], 
+    input[type=number], 
+    input[type=tel], 
+    input[type=date], 
+    input[type=datetime], 
+    input[type=url], 
+    input[type=password], 
+    select,textarea,.form-control {
+        background: #fff none;
+        border-radius: 0 !important;
+        border: 1px solid #bdbdbd;
+        border: 0.07142857rem solid #bdbdbd;
+        box-sizing: border-box;
+        color: #404040;
+        display: inline-block;
+        font-family: Arial, "Microsoft YaHei", Helvetica, sans-serif;
+        font-size: 14px;
+        font-size: 1rem;
+        letter-spacing: normal;
+        margin: 0;
+        height: 32px;
+        // height: 2.28571429rem;
+        outline: none;
+        padding: 4px 10px;
+        padding: 0.28571429rem 0.71428571rem;
+        text-align: left;
+        text-indent: 0;
+        vertical-align: middle;
+        box-shadow: none !important;
+    }
+
+    .code-content {
+        overflow: hidden;
+        p {
+            font-size: 18px;
+            color: #75c4e2;
+            padding-left: 15px;
+        }
+    }
+    .code-change {
+        text-align: center;
+        i {
+            cursor: pointer;
+            .code-font {
+                display: none;
+            }
+            &:hover {
+                color: green;
+                .code-font {
+                    display: inline;
+                }
+            }
+        }
+    }
+    .content-header {
+        margin: 10px 10px 30px;
+        margin-top: -24px;
+        h1 {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-left: 20px;
+            font-size: 15px;
+            font-stretch: extra-expanded;
+            font-weight: bolder;
+        }
+    }
+    .copy-btn {
+        position: absolute;
+        top: 0px;
+        right: 15px; //bootstrap div padding-right 15px
+    }
+    // .doc-table {
+    //     .table {
+    //         thead {
+    //             tr {
+    //                 th {
+    //                     min-width: 120px;
+    //                     vertical-align: middle;
+    //                 }
+    //                 td {
+    //                     min-width: 120px;
+    //                     vertical-align: middle;
+    //                 }
+    //             }
+    //         }
+    //         tbody {
+    //             tr {
+    //                 td {
+    //                     min-width: 120px;
+    //                     vertical-align: middle;
+    //                 }
+    //             }
+    //         }
+    //         tfoot {
+    //             tr {
+    //                 td {
+    //                     min-width: 120px;
+    //                     vertical-align: middle;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+}

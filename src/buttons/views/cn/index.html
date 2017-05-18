@@ -1,0 +1,355 @@
+<div class="buttons">
+	 <header class="content-header">
+		<h1>Button按钮</h1>
+		<p>绿洲OASIS提供一套基于绿洲的按钮组件</p>
+	</header>
+	<oasis-row>
+		<oasis-col md=12>
+			<oasis-box>
+				<oasis-box-header>
+					<span class="title">默认按钮</span>
+					<span class="tips">基础的按钮用法。</span>
+				</oasis-box-header>
+				<oasis-box-body height=100>
+					<oasis-button type ="button" text="默认按钮"></oasis-button>
+					<oasis-button type ="hover" text="默认按钮"></oasis-button>
+					<oasis-button type="text" text="默认文本"></oasis-button>
+					<oasis-button type="link" text="默认链接"></oasis-button>
+					<br/>
+				</oasis-box-body>
+				<oasis-box-footer>
+					<div ng-show = "codeShow" class="code-content">
+        				<oasis-col md=8 >
+        					<button class="copy-btn" onclick="   if(copyToClipboard($(this).parent()[0])){alert('复制成功')}else{alert('复制失败')}">copy
+        					</button>
+							<pre>html:<br/>&lt;oasis-button type ="button" text="默认按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="hover" text="默认按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="text" text="默认文本"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="link" text="默认链接"&gt;&lt;/oasis-button&gt;</pre>
+			   			</oasis-col>
+			   			<oasis-col md="4" >
+			   				<p>
+			   				<mark>type</mark>类型只用三个属性<mark>button、text、link</mark>表示按钮，文字按钮，链接按钮。<mark>text</mark>属性描述按钮内容	
+			   				</p>
+			   			</oasis-col>
+        			</div>
+			   		<div class="code-change">
+			   			<i ng-show = "!codeShow" 
+					   	class="glyphicon glyphicon-chevron-down" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">显示代码</span></i>
+					   	<i ng-show = "codeShow"
+					   	class="glyphicon glyphicon-chevron-up" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">隐藏代码</span></i>
+			   		</div>
+        		</oasis-box-footer>
+			</oasis-box>
+		</oasis-col>	
+	</oasis-row>
+	<oasis-row>
+		<oasis-col md=12>
+			<oasis-box>
+				<oasis-box-header>
+					<span class="title">禁用按钮</span>
+					<span class="tips">按钮不可用状态。</span>
+				</oasis-box-header>
+				<oasis-box-body height=100>
+					<oasis-button type ="button" disabled text="默认按钮"></oasis-button>
+					<oasis-button type ="hover" disabled text="默认按钮"></oasis-button>
+					<oasis-button type="text" disabled text="默认文本"></oasis-button>
+					<oasis-button type="link" disabled text="默认链接"></oasis-button>
+					<br/>
+				</oasis-box-body>
+				<oasis-box-footer>
+					<div ng-show = "codeShow" class="code-content">
+        				<oasis-col md=8 >
+        					<button class="copy-btn" onclick="   if(copyToClipboard($(this).parent()[0])){alert('复制成功')}else{alert('复制失败')}">copy
+        					</button>
+							<pre>html:<br/>&lt;oasis-button type ="button" disabled text="默认按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="hover" disabled text="默认按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="text" disabled text="默认文本"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="link" disabled text="默认链接"&gt;&lt;/oasis-button&gt;</pre>
+			   			</oasis-col>
+			   			<oasis-col md="4" >
+			   				<p>
+							<mark>disabled</mark>属性或者<mark>class="disabled"</mark>都可以实现禁用按钮	
+			   				</p>
+			   			</oasis-col>
+        			</div>
+			   		<div class="code-change">
+			   			<i ng-show = "!codeShow" 
+					   	class="glyphicon glyphicon-chevron-down" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">显示代码</span></i>
+					   	<i ng-show = "codeShow"
+					   	class="glyphicon glyphicon-chevron-up" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">隐藏代码</span></i>
+			   		</div>
+        		</oasis-box-footer>
+			</oasis-box>
+		</oasis-col>
+	</oasis-row>
+	<oasis-row>
+		<oasis-col md=12>
+			<oasis-box>
+				<oasis-box-header>
+					<span class="title">情景按钮</span>
+				</oasis-box-header>
+				<oasis-box-body height=250>
+					<oasis-button type ="button" text="默认按钮"></oasis-button>
+					<oasis-button type="button" scene="success" text="成功按钮" native-type = "submit"></oasis-button>
+					<oasis-button type="button" scene="warning" text="告警按钮"></oasis-button>
+					<oasis-button type="button" scene="danger" text="危险按钮"></oasis-button>
+					<br/>
+					<br/>
+					<oasis-button type ="hover" text="默认按钮"></oasis-button>
+					<oasis-button type="hover" scene="success" text="成功按钮"></oasis-button>
+					<oasis-button type="hover" scene="warning" text="告警按钮"></oasis-button>
+					<oasis-button type="hover" scene="danger" text="危险按钮"></oasis-button>
+					<br/>
+					<br/>
+					<oasis-button type="text" text="默认文本"></oasis-button>
+					<oasis-button type="text" scene="success" text="成功文本"></oasis-button>
+					<oasis-button type="text" scene="warning" text="告警文本"></oasis-button>
+					<oasis-button type="text" scene="danger" text="危险文本"></oasis-button>
+					<br/>
+					<br/>
+					<oasis-button type="link" text="默认链接"></oasis-button>
+					<oasis-button type="link" scene="success" text="成功链接"></oasis-button>
+					<oasis-button type="link" scene="warning" text="告警链接"></oasis-button>
+					<oasis-button type="link" scene="danger" text="危险链接"></oasis-button>
+					<br/>
+				</oasis-box-body>
+				<oasis-box-footer>
+					<div ng-show = "codeShow" class="code-content">
+        				<oasis-col md=8 >
+        					<button class="copy-btn" onclick="   if(copyToClipboard($(this).parent()[0])){alert('复制成功')}else{alert('复制失败')}">copy
+        					</button>
+							<pre>html:<br/>&lt;oasis-button type ="button" text="默认按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="button" scene="success" text="成功按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="button" scene="danger" text="告警按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="button" scene="warning" text="危险按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="hover" text="默认按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="hover" scene="success" text="成功按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="hover" scene="danger" text="告警按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="hover" scene="warning" text="危险按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="text" text="默认文本"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="text" scene="success" text="成功文本"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="text" scene="danger" text="危险文本"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="text" scene="warning" text="告警文本"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="link" text="默认链接"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="link" scene="success text="成功链接"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="link" scene="danger" text="危险链接"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="link" success="warning" text="告警链接"&gt;&lt;/oasis-button&gt;<br/></pre>
+			   			</oasis-col>
+			   			<oasis-col md="4" >
+			   				<p>
+			   				通过<mark>scene</mark>属性danger default success warning 四个值表示使用情景。默认default	
+			   				</p>
+			   			</oasis-col>
+        			</div>
+			   		<div class="code-change">
+			   			<i ng-show = "!codeShow" 
+					   	class="glyphicon glyphicon-chevron-down" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">显示代码</span></i>
+					   	<i ng-show = "codeShow"
+					   	class="glyphicon glyphicon-chevron-up" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">隐藏代码</span></i>
+			   		</div>
+        		</oasis-box-footer>
+			</oasis-box>
+		</oasis-col>	
+	</oasis-row>
+	<oasis-row>
+		<oasis-col md=12>
+			<oasis-box>
+				<oasis-box-header>
+					<span class="title">带图标按钮</span>
+				</oasis-box-header>
+				<oasis-box-body height=250>
+					<oasis-button icon="fa fa-search" text="搜索"></oasis-button>
+					<oasis-button icon="glyphicon glyphicon-plus" text="增加"></oasis-button>
+					<oasis-button icon="fa fa-edit" text="编辑"></oasis-button>
+					<oasis-button icon="fa fa-trash" text="删除"></oasis-button>
+					<br/><br/>
+					<oasis-button icon="fa fa-search"></oasis-button>
+					<oasis-button icon="glyphicon glyphicon-plus"></oasis-button>
+					<oasis-button icon="fa fa-edit"></oasis-button>
+					<oasis-button icon="fa fa-trash"></oasis-button>
+					<br/><br/>
+					<oasis-button icon="fa fa-search" icon-right text="搜索"></oasis-button>
+					<oasis-button icon="glyphicon glyphicon-plus" icon-right text="增加"></oasis-button>
+					<oasis-button icon="fa fa-edit" icon-right text="编辑"></oasis-button>
+					<oasis-button icon="fa fa-trash" icon-right text="删除"></oasis-button>
+				</oasis-box-body>
+				<oasis-box-footer>
+					<div ng-show = "codeShow" class="code-content">
+        				<oasis-col md=8 >
+        					<button class="copy-btn" onclick="   if(copyToClipboard($(this).parent()[0])){alert('复制成功')}else{alert('复制失败')}">copy
+        					</button>
+							<pre>html:<br/>&lt;oasis-button icon="fa fa-search" text="搜索"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="glyphicon glyphicon-plus" text="增加"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-edit" text="编辑"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-trash" text="删除"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-search" &gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="glyphicon glyphicon-plus" &gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-edit" &gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-trash" &gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-search" icon-right text="搜索"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="glyphicon glyphicon-plus" icon-right text="增加"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-edit" icon-right text="编辑"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-trash" icon-right text="删除"&gt;&lt;/oasis-button&gt;</pre>
+			   			</oasis-col>
+			   			<oasis-col md="4" >
+			   				<p>
+							<mark>icon</mark>属性图标字体或者自定义class都可以实现button按钮添加图标。也可以只需要图标。通过<mark>icon-right</mark>表示图标放到右侧。默认在左侧。不支持type为其他类型。
+			   				</p>
+			   			</oasis-col>
+        			</div>
+			   		<div class="code-change">
+			   			<i ng-show = "!codeShow" 
+					   	class="glyphicon glyphicon-chevron-down" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">显示代码</span></i>
+					   	<i ng-show = "codeShow"
+					   	class="glyphicon glyphicon-chevron-up" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">隐藏代码</span></i>
+			   		</div>
+        		</oasis-box-footer>
+			</oasis-box>
+		</oasis-col>
+	</oasis-row>
+	<oasis-row>
+		<oasis-col md=12>
+			<oasis-box>
+				<oasis-box-header>
+					<span class="title">不同尺寸按钮</span>
+				</oasis-box-header>
+				<oasis-box-body height=100>
+					<oasis-button icon="fa fa-search" size="large" text="搜索" class="large"></oasis-button>
+					<oasis-button icon="fa fa-search"  text="搜索"></oasis-button>
+					<oasis-button icon="fa fa-search" size="small" text="搜索" class="small"></oasis-button>
+					<oasis-button icon="fa fa-search" size="mini" text="搜索" class="mini"></oasis-button>
+				</oasis-box-body>
+				<oasis-box-footer>
+					<div ng-show = "codeShow" class="code-content">
+        				<oasis-col md=8 >
+        					<button class="copy-btn" onclick="   if(copyToClipboard($(this).parent()[0])){alert('复制成功')}else{alert('复制失败')}">copy
+        					</button>
+							<pre>html:<br/>&lt;oasis-button icon="fa fa-search" text="搜索"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="glyphicon glyphicon-plus" text="增加"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-edit" text="编辑"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-trash" text="删除"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-search" &gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="glyphicon glyphicon-plus" &gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-edit" &gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-trash" &gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-search" icon-right text="搜索"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="glyphicon glyphicon-plus" icon-right text="增加"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-edit" icon-right text="编辑"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button icon="fa fa-trash" icon-right text="删除"&gt;&lt;/oasis-button&gt;</pre>
+			   			</oasis-col>
+			   			<oasis-col md="4" >
+			   				<p>
+							<mark>icon</mark>属性图标字体或者自定义class都可以实现button按钮添加图标。也可以只需要图标。通过<mark>icon-right</mark>表示图标放到右侧。默认在左侧。不支持type为其他类型。
+			   				</p>
+			   			</oasis-col>
+        			</div>
+			   		<div class="code-change">
+			   			<i ng-show = "!codeShow" 
+					   	class="glyphicon glyphicon-chevron-down" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">显示代码</span></i>
+					   	<i ng-show = "codeShow"
+					   	class="glyphicon glyphicon-chevron-up" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">隐藏代码</span></i>
+			   		</div>
+        		</oasis-box-footer>
+			</oasis-box>
+		</oasis-col>
+	</oasis-row>
+	<oasis-row>
+		<oasis-col md=12>
+			<oasis-box>
+				<oasis-box-header>
+					<span class="title">属性配置</span>
+				</oasis-box-header>
+				<oasis-box-body height-auto>
+					<table>
+						<table class="table">
+  						<thead>
+  							<tr class="active">
+  								<th>元素</th>
+  								<th>属性</th>
+  								<th>类型</th>
+  								<th>可选值</th>
+  								<th>默认值</th>
+  								<th>说明</th>
+  							</tr>
+  						</thead>
+  							<tr>
+  								<td rowspan="7"
+  								style="vertical-align: middle;">oasis-button</td>
+  								<td>type</td>
+  								<td>string</td>
+  								<td>btn hover link text</td>
+  								<td>btn</td>
+  								<td><mark>type</mark>属性描述了按钮类型，提供了四种类型的按钮：btn正常按钮类型，link链接类型按钮，悬浮按钮类型，文字按钮类型。</td>
+  							</tr>
+  							<tr>
+  								<!-- <td >
+  								oasis-button</td> -->
+  								<td>text</td>
+  								<td>string</td>
+  								<td>---</td>
+  								<td>---</td>
+  								<td><mark>text</mark>属性按钮文本描述.。按钮文字内容</td>
+  							</tr>
+  							<tr>
+  								<!-- <td>oasis-button</td> -->
+  								<td>scene</td>
+  								<td>string</td>
+  								<td>warning success danger </td>
+  								<td>可以赋值也可以不赋值。default</td>
+  								<td><mark>scene</mark>属性描述按钮使用场景类型。常用于描述在成功、危险、警告类</td>
+  							</tr>
+  							<tr>
+  								<!-- <td>oasis-button</td> -->
+  								<td>disabled</td>
+  								<td>boolean</td>
+  								<td>---</td>
+  								<td>---</td>
+  								<td><mark>disabled</mark>属性标示按钮禁用状态。也可以通过添加class为.disabled</td>
+  							</tr>
+  							<tr>
+  								<!-- <td>oasis-button</td> -->
+  								<td>icon</td>
+  								<td>string</td>
+  								<td>---</td>
+  								<td>---</td>
+  								<td><mark>icon</mark>属性用于配置按钮显示的图标字体，可以采用ICON图标字体库</td>
+  							</tr>
+  							<tr>
+  								<!-- <td>oasis-button</td> -->
+  								<td>icon-right</td>
+  								<td>boolean</td>
+  								<td>true/false或者只配置属性</td>
+  								<td></td>
+  								<td><mark>icon-right</mark>属性配置icon图标显示在文字的位置</td>
+  							</tr>
+  							<tr>
+  								<!-- <td>oasis-button</td> -->
+  								<td>native-type</td>
+  								<td>string</td>
+  								<td>submit button reset</td>
+  								<td>button</td>
+  								<td><mark>native-type</mark>按钮原生type属性</td>
+  							</tr>
+  						</table>
+					</table>
+				</oasis-box-body>
+			</oasis-box>
+		</oasis-col>
+	</oasis-row>
+	<!-- <oasis-row>
+		<oasis-col md=12>
+			<oasis-box>
+				<oasis-box-header>
+					<span class="title">下拉按钮</span>
+				</oasis-box-header>
+				<oasis-box-body height=250>
+					<oasis-button dropdown=true dropdownValue="ss,ss,sss,ssssa,ssss,sd"type  ="button" text="默认按钮"></oasis-button>
+					<oasis-button dropdown=true dropdownValue="ss,ss,sss,ssssa,ssss,sd"type  ="button" text="默认按钮"></oasis-button>
+					<br/>
+				</oasis-box-body>
+				<oasis-box-footer>
+					<div ng-show = "codeShow" class="code-content">
+        				<oasis-col md=8 >
+        					<button class="copy-btn" onclick="   if(copyToClipboard($(this).parent()[0])){alert('复制成功')}else{alert('复制失败')}">copy
+        					</button>
+							<pre>html:<br/>&lt;oasis-button type ="button" text="默认按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="button" scene="success" text="成功按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="button" scene="danger" text="告警按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="button" scene="warning" text="危险按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="hover" text="默认按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="hover" scene="success" text="成功按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="hover" scene="danger" text="告警按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="hover" scene="warning" text="危险按钮"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="text" text="默认文本"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="text" scene="success" text="成功文本"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="text" scene="danger" text="危险文本"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="text" scene="warning" text="告警文本"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="link" text="默认链接"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="link" scene="success text="成功链接"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="link" scene="danger" text="危险链接"&gt;&lt;/oasis-button&gt;<br/>&lt;oasis-button type ="link" success="warning" text="告警链接"&gt;&lt;/oasis-button&gt;<br/></pre>
+			   			</oasis-col>
+			   			<oasis-col md="4" >
+			   				<p>
+			   				通过<mark>scene</mark>属性danger default success warning 四个值表示使用情景。默认default	
+			   				</p>
+			   			</oasis-col>
+        			</div>
+			   		<div class="code-change">
+			   			<i ng-show = "!codeShow" 
+					   	class="glyphicon glyphicon-chevron-down" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">显示代码</span></i>
+					   	<i ng-show = "codeShow"
+					   	class="glyphicon glyphicon-chevron-up" 
+					   	ng-click = "codeShow=!codeShow">
+					   	<span class="code-font">隐藏代码</span></i>
+			   		</div>
+        		</oasis-box-footer>
+			</oasis-box>
+		</oasis-col>
+	</oasis-row> -->
+</div>
